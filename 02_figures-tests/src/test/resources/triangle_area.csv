@@ -1,0 +1,4 @@
+            a, b, expected_result
+            4, 2, 4
+            0, 0, 0
+            10, 4, 20
