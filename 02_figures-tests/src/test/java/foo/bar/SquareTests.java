@@ -20,4 +20,15 @@ class SquareTests {
         Square square = new Square(a);
         assertEquals(expectedArea, square.area(), "Area of square is different than expected");
     }
+
+    @ParameterizedTest(name = "Circumference of square with sides ({0}) should be {1}")
+    @CsvSource({
+            "0, 0",
+            "1, 4",
+            "10, 40"
+    })
+    void circumferenceOfSquare(int a, int expectedArea) {
+        Square square = new Square(a);
+        assertEquals(expectedArea, square.circumference(), "Area of square is different than expected");
+    }
 }
